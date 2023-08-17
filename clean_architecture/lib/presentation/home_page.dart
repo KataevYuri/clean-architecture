@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../domain/model.dart';
+import 'digitwords_ui.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({
@@ -12,8 +11,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  final String _title = '';
-
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -21,14 +18,14 @@ class _HomePageState extends State<HomePage> {
         appBar: AppBar(
           title: const Text('Clean Architecture Practice'),
         ),
-        body: Center(
-          child: Text(_title),
+        body: const Center(
+          child: WordWidgetUI(),
         ),
         floatingActionButton: FloatingActionButton.extended(
-          label: const WordWidget(),
-          onPressed: () => setState(() => {}
-              //_title = myserv.getRandomWord()
-              ),
+          label: const Text('Get word'),
+          onPressed: () {
+            //setState(() {});
+          },
         ),
       ),
     );
