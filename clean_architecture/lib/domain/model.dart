@@ -1,5 +1,7 @@
+typedef DigitWordsType = Map<int, String>;
+
 class DigitWordsData {
-  Map<int, String> words = {
+  DigitWordsType words = {
     1: 'One',
     2: 'Two',
     3: 'Three',
