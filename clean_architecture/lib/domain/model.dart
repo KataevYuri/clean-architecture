@@ -1,22 +1,18 @@
-import 'dart:math';
+class DigitWordsData {
+  Map<int, String> words = {
+    1: 'One',
+    2: 'Two',
+    3: 'Three',
+    4: 'Four',
+    5: 'Five',
+    6: 'Six',
+    7: 'Seven',
+    8: 'Eight',
+    9: 'Nine',
+  };
 
-import '../data/get_data.dart';
+  operator [](int i) => words[i];
 
-class DigitWords {
-  final DigitWordsData _words = DigitWordsData();
-
-  int _getRandomInt() {
-    return Random().nextInt(9) + 1;
-  }
-
-// это бизнес логика
-  void filterWords() {}
-
-  void sortWords() {}
-//.....
-
-  String getRandomWord() {
-    int i = _getRandomInt();
-    return '$i: ${_words.getWord(i)}';
-  }
+  @override
+  String toString() => 'DigitWordsModel(_words: $words)';
 }

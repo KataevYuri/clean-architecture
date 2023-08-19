@@ -1,7 +1,6 @@
 // Presentation
 import 'package:flutter/material.dart';
-
-import '../domain/model.dart';
+import '../domain/repository.dart';
 
 class WordWidgetUI extends StatelessWidget {
   const WordWidgetUI({
@@ -10,6 +9,6 @@ class WordWidgetUI extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(DigitWords().getRandomWord());
+    return Text(DigitWords().getRandomDigitWord());
   }
 }
