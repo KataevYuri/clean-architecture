@@ -10,7 +10,7 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(
           useMaterial3: true,
-          appBarTheme: AppBarTheme(backgroundColor: Colors.purple[300])),
+          appBarTheme: AppBarTheme(backgroundColor: Colors.purple[400])),
       home: const HomePage(),
     );
   }
