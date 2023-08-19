@@ -13,9 +13,18 @@ class DigitWords {
     return digitword;
   }
 
-  String getApiWord() {
-    final digitword = DigitWordsApiData().getApiWordOne(digitWordsList);
-    return digitword;
+  String getApiWord(int num) {
+    switch (num) {
+      case 1:
+        return DigitWordsApiData().getApiWord1(digitWordsList);
+      case 2:
+        return DigitWordsApiData().getApiWord2(digitWordsList);
+      case 3:
+        return DigitWordsApiData().getApiWord3(digitWordsList);
+
+      default:
+        return DigitWordsApiData().getApiWord1(digitWordsList);
+    }
   }
 }
 
